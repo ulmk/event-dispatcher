@@ -46,7 +46,6 @@ func Test_Command(t *testing.T) {
 		return
 	}
 
-	// Publish event with parameters
 	err = eventDispatcher.Pub("example", 42, "param")
 	if err != nil {
 		fmt.Println("Publish error:", err)
